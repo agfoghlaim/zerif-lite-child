@@ -1,0 +1,1773 @@
+/*
+ Theme Name:   Zerif Lite Child
+ Theme URI:    http://agfoghlaim.github.io
+ Description:  Zerif Lite Child Theme
+ Author:       Moh
+ Template:     zerif-lite
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  zerif-lite-child
+*/
+
+/*marie*/
+
+
+
+/*======================================================
+========================================================
+
+
+===========================HEADER=======================
+
+
+========================================================
+======================================================*/
+
+
+#ywig-h1-intro{
+	top: -20vw;
+}
+h1.intro-text{
+    font-weight: bolder;
+    padding: 0.3em 0.5em;
+    text-transform: none;
+    /*font-size: 2.8em;*/
+    color: #fffeeeeb;
+    border-radius: 2px !important;
+    animation: appear 2.6s 0.9s ease-in-out;
+    background: #3e4e32;
+}
+
+h1.intro-text:after {
+    content: " GALWAY";
+    color: #9dc27c;
+}
+
+h2.ywig-big-intro-sub{
+	float:right;
+	color:#fffeee;
+	 animation:appear 2.6s 1s  ease-in-out;
+}
+
+ .header-content-wrap{
+	background: linear-gradient(rgba(96, 155, 52, 0.33),rgba(96, 155, 52, 0.57));
+	padding:0;
+	height:50vw;
+}
+
+
+
+
+/*========================
+
+Header colour boxes
+
+========================*/
+
+.ywig-header-colour{
+	height:25vw;
+	top: 112px; /*todo media query*/
+}
+
+#ywig-header-colour-one{
+   background:#9dc27c;
+}
+
+#ywig-header-colour-two{
+    background: #ffc0cb;
+}
+
+#ywig-header-colour-two:after{
+	content: "";
+    height: 33.333333vw;
+    width: 66.666666vw;
+    top: 0;
+    background: #0cc5ecc4;
+    border-top-left-radius: 66.666666vw;
+    display: block;
+    position: absolute;
+    left: 0;
+    overflow: visible;
+    z-index: -1;
+    border-top-right-radius: 66.666666vw;
+    background-image: url(http://youthworkgalway.ie/wp-content/uploads/photo-gallery/4.jpg);
+    background-position:3% 66%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#ywig-header-colour-three{
+    background: #c5dbac00;
+}
+#ywig-header-colour-four{
+    background: #f39b3ce6;
+    background-image: url(http://138.68.182.248/wp-content/uploads/2018/04/cape1.jpg);
+    background-size: cover;
+}
+
+#ywig-header-colour-four:after{
+	content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #10c7f0a3;
+}
+#ywig-header-colour-five{
+    padding:0;
+    background:#ee9835;
+}
+
+#ywig-header-colour-five:after{
+	content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    border-left: 16.3333333vw solid transparent;
+    border-right: 16.3333333vw solid transparent;
+    border-bottom: 25vw solid #9dc27c;
+
+}
+#ywig-header-colour-six{
+    background: #3e4e32;
+}
+
+
+
+/*========================================
+
+Logo SVG
+
+========================================*/
+.ywig-animation-row{
+	position: absolute;
+    top: 112px;
+    left: 0;
+    height: 33.3333vw;
+    float: left;
+}
+#Layer_1{
+	stroke: none;
+    margin: -2.5vw 0;
+    width: 30vw;
+    height: 30vw;
+    animation: shadow 4s linear 1;
+    filter: drop-shadow( 5px 3px 3px rgba(62,78,50,0.5));
+    z-index: 2;
+    position: relative;
+}
+
+#Layer_1 .darkgreen{
+	opacity:0.9;
+	fill:#026531;
+	animation:colour-change 2s 0.6s linear;
+	stroke:none;
+
+}
+#Layer_1 .blue{
+	opacity:0.9;
+	fill:#01cbfb;
+	animation:colour-change 2s 0.6s linear;
+	stroke:none;
+	url(#dropShadow)
+}
+
+
+#Layer_1 .orange{
+	opacity:0.9;
+	fill:#fd9a31;
+	animation:colour-change 2s 0.6s linear;
+	stroke:none;
+	
+}
+
+#Layer_1 .red{
+	opacity:0.9;
+	fill:#fb3430;
+	animation:colour-change 2s 0.6s  linear;
+	stroke:none;
+	
+}
+#Layer_1 .pink{
+	opacity:0.9;
+	fill:#fb6496;
+	animation:colour-change 2s 0.6s  linear;
+	stroke:none;
+}
+
+#Layer_1 .green{
+	opacity:0.9;
+	fill:#7fce45;
+	stroke:none;
+	animation:arrive 2.6s 1s  ease-in-out;
+}
+
+/*
+Logo hover Effects
+*/
+#Layer_1 path.darkgreen:hover{
+fill:#01cbfb;
+}
+
+#Layer_1 path.red:hover{
+fill:#f46f96 ;
+}
+
+#Layer_1 path.blue:hover{
+	fill:#026531;
+}
+
+#Layer_1 path.pink:hover{
+fill:#fb3430;
+}
+
+
+/*=================================
+Header Animations
+=================================*/
+
+@keyframes appear {
+  0%   { transform: translate(900px);opacity:0;}
+  100% {transform: translate(0px);opacity:1;}
+}
+
+ @keyframes shadow{
+ 	0%{filter: drop-shadow( 23px -8px 3px rgba(62,78,50,0.5));}
+ 	100%{filter: drop-shadow( 5px 3px 3px rgba(62,78,50,0.5));}
+ 
+ }
+
+ @keyframes arrive{
+	0%{transform: rotate(180deg);}
+	0%{transform: rotate(180deg);}
+	100%{transform: rotate(0deg);}
+}
+
+@keyframes colour-change {
+  0%   {opacity:0.1;transform: rotate(-90deg);transform-origin: 54% 53%; }
+  25%   {opacity:0.5;transform: rotate(-60deg);transform-origin: 54% 53%; }
+  50%  {opacity:0.9;transform: rotate(-45deg);transform-origin: 54% 53%; }
+  100% {opacity:1;transform: rotate(-0deg);transform-origin: 54% 53%; }
+}
+
+
+
+
+
+/*==============================================
+
+HEADER MEDIA QUERIES
+
+==============================================*/
+
+@media (max-width: 767px){
+	.ywig-header-colour{
+		display:none;
+	}
+
+	.ywig-animation-row{
+		width:100%;
+		top: 60px;	
+	}
+	#Layer_1{
+		width: 47vw;
+    	height: 47vw;
+	}
+
+	#ywig-h1-intro {
+    	top: 60vw;
+	}
+
+	.header-content-wrap {
+    	height: 90vw !important;
+	}
+
+
+}
+
+
+
+@media (max-width: 480px){
+	.header-content-wrap {
+   	 	height: 150vw !important;
+	}
+}
+
+@media (max-width: 319px){
+	.ywig-animation-row {
+	    display:none;
+	}
+
+	#ywig-h1-intro {
+	    top: 100px !important;
+	}
+
+	.header-content-wrap {
+   	 	height: 400px !important;
+	}
+}
+
+@media (max-width: 600px){
+
+	#ywig-h1-intro {
+    top: 60vw;
+	}
+
+	.ywig-animation-row{
+		width:100%;
+		top: 60px;	
+	}
+
+	.header-content-wrap {
+    	height: 120vw !important;
+	}
+}
+
+
+/*===========================================
+
+
+=============General========================
+
+
+===========================================*/
+
+
+
+
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+
+body {
+	overflow-x: hidden;
+	color: #3e4e32;
+	font-family: 'Lato', Helvetica, sans-serif !important;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 25px;
+	text-align: center;
+	background: #fffff1;
+}
+
+h1, h2{
+	font-weight:500;
+}
+
+/*=====================================================
+
+POSSIBLE UNUSED CLASSES, DELETE SOMETIME
+
+=====================================================*/
+.ywig-icon{
+ /* font-size:50px;*/
+}
+
+.ywig-text{
+/*  font-size:20px;*/
+}
+.ywig-text-span{
+/*	color:#efeedd;
+	font-size:24px;*/
+}
+.ywig-text-span-dark{
+/*	font-family: inherit;
+	color:#3E4F32;
+	font-size:16px;
+	font-weight: bold;
+	text-transform: bold;*/
+}
+
+.ywig-underline-midgreen{
+	/*border-bottom: 3px solid #609b34;*/
+}
+
+.ywig-under-dark{
+	/*border-bottom:3px solid #3e4e32;*/
+}
+
+
+/*
+Social Media Colours
+*/
+.fa-facebook-f{
+	/*color:#3d5a99;*/
+}
+
+.fa-twitter{
+	/*color:#1da1f2;*/
+}
+
+.fa-youtube{
+	/*color:#f00;*/
+}
+
+
+.dark-text{
+	color:#3e4e32;
+}
+
+.white-text{
+	color:#efeedd;
+}
+
+body.custom-background {
+/*    background-position: top left !important;
+    background-repeat: no-repeat;
+    background-attachment: scroll !important;*/
+}
+
+
+
+
+/*
+SECTION HEADERS H2 box shadow
+*/
+
+section{
+	padding-bottom:20px;
+}
+
+
+.section-header h2{
+	box-shadow: rgba(62,78,50,0.29) 0 10px 6px -6px;
+	padding:2% 4% 2% 4%;
+	border:3px solid #fff !important;
+}
+
+
+
+/*
+ Override Parent buttons 
+*/
+.dark-pink-btn,.red-btn, .green-btn {
+	color: #9445ce !important;
+	background: transparent;
+	border:2px solid #9445ce !important;
+	border-radius:2px !important;
+	text-align: center;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	margin:10px;
+	padding: 10px 20px 10px 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+    text-decoration: none;
+	font-size: 12px;
+}
+
+.dark-pink-btn:hover,.red-btn:hover {
+	color: #fffeee !important;
+	background: #9445ce;
+	border:2px solid #9445ce;
+}
+
+
+
+/*===============================
+Navigation
+===============================*/
+
+.navbar-inverse .navbar-nav > li {
+    text-transform: uppercase;
+}
+.navbar{
+	background: #fffff1;
+}
+
+#main-nav.fixed {
+     position: fixed; 
+     top: 0px; 
+     background:#fffff1;
+}
+
+.navbar-inverse .navbar-nav ul.sub-menu{
+	background:#fffff1;
+}
+
+
+/*small screens nav*/
+.navbar-toggle.collapsed {
+    background-color: #3e4e32 !important;
+}
+
+.navbar-toggle.active {
+    background-color: #609b34 !important;
+}
+
+
+/*
+Donate Button
+*/
+.navbar .navbar-inverse .bs-docs-nav .menu-align-center{
+	position:fixed !important;
+}
+
+a.ywig-donate-btn{
+	position:absolute;
+	right:10px;
+	top:10px;
+
+}
+
+/*
+Social Buttons
+*/
+a.ywig-social-btn{
+	position:absolute;
+	margin:0px;
+	text-align: center;
+	padding: 9px 20px 9px 20px;
+	text-align: center;
+	text-transform: uppercase;
+	position:absolute;
+	font-size: 12px;
+	display:inline-block;
+	float:left;
+	font-size:28px;
+
+
+}
+
+#ywig-facebook-btn{
+	left:10px;
+	top:20px;
+}
+
+#ywig-twitter-btn{
+	left:58px;
+	top:20px;
+}
+
+#ywig-instagram-btn{
+	left:106px;
+	top:20px;
+}
+
+/*
+show header img on large screens only
+*/
+
+@media (max-width: 767px) {
+
+	body.custom-background{
+		background-image: none !important;
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================================================================
+
+
+======================About Section - Our Mission=================
+
+
+=====================================================================*/
+#aboutus{
+	background: rgba(255,254,238,0.7);
+	color: #3E4F32; 
+	border-top:3px solid #fffeee;
+	padding-top:0px;
+}
+
+.about-us .big-intro{
+	color:#3e4e32;
+}
+
+.about-us .section-header h2{
+	color:#3e4e32 !important;
+}
+
+.ywig-blockquote{
+	font-size: 18px;
+	border-left: 5px solid rgba(96, 155, 52, 1);
+	padding-left: 15px;
+}
+
+
+#ywig-about-feature-img-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: rgba(62, 78, 50, 0);
+    transition: all 0.3s ease;
+
+}
+
+#ywig-about-feature-img-overlay p a {
+    color: rgba(255, 255, 254, 0);
+    top: 45%;
+    left:35%;
+    font-size: 26px;
+    font-weight: 700;
+    position: absolute;
+}
+
+#ywig-about-feature-img:hover #ywig-about-feature-img-overlay {
+   background: rgba(62, 78, 50, 0.8);
+}
+
+#ywig-about-feature-img:hover #ywig-about-feature-img-overlay p a {
+     color: rgba(255, 255, 254, 1);
+}
+
+
+
+#ywig-about-feature-img{
+	background: #b7d29cc7;
+    padding: 0;
+}
+
+#ywig-about-feature-img img{
+	width:100%;
+} 
+
+.about-us p {
+    color: #3e4e32;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: left;
+}
+
+.skills .skill p{
+	color: #3e4e32;
+	border-left: 5px solid #609b34;
+    padding-left: 2%;
+}
+
+.skills .skill{
+	margin-bottom: 45px;
+}
+
+.section-legend {
+font-weight: 600;
+font-size:17px;
+padding-right:5px;
+color: #3e4e32;
+}
+
+
+
+
+/*====================================
+Custom Section - LOCATIONS
+====================================*/
+.locations{
+	position:relative;
+}
+
+.locations .section-header h2{
+	border: 3px solid #609b34;
+	-webkit-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+	box-shadow: #3e4e324a 0px 0px 6px 0px;
+}
+
+.location-wrap:after {
+    content: "";
+    background-image: linear-gradient(#609b345e, #3c763d24);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+
+div#ywig-locations-row{
+	padding-top:50px;
+	padding-bottom:50px;
+	margin-left: 15px;
+	
+}
+
+
+.ywig-proj-map{
+	border-radius: 50% !important;
+
+}
+
+
+div#ywig-locations-row, #ywig-locations-projects{
+	animation:tab-down 1s ease-in-out;
+}
+
+@keyframes tab-down {
+  0%   { opacity:0;}
+  100% {opacity:1;}
+}
+
+#ywig-locations-projects{
+	padding-left:15px;
+}
+
+#ywig-location-projects-heading{
+	padding-left:15px;
+}
+
+#ywig-location-projects-heading > span{
+	border-bottom:3px solid #3e4e32;
+	text-transform: uppercase;
+}
+
+#ywig-location-projects-detail-row{
+	margin-top:50px;
+}
+
+.ywig-location-project-col{
+	padding-top:20px;
+	/*z-index: 1;*/
+}
+
+p.ywig-location-address{
+	margin-bottom:0px;
+}
+.ywig-location-social{
+	padding:5px;
+    font-size: 20px;
+}
+
+div.ywig-location-address-col{
+	padding-bottom:30px;
+}
+
+
+
+/*
+LOCATIONS SECTION - Project thumbnail hover effect
+*/
+
+.ywig-location-project-col .img-contain:hover .ywig-loc-proj-overlay{
+	background: #3e4e32eb;
+	border: rgba(169,214,136,1) ;
+	
+}
+
+.ywig-loc-proj-overlay{
+  
+    padding:5% 2% 5% 2%;
+    background: rgba(169,214,136,0);
+   	border-radius:2px;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+
+}
+.ywig-loc-proj-overlay h4{
+	opacity: 0;
+	color: #fffeee;
+	/*font-weight: 700;*/
+}
+
+.ywig-loc-proj-overlay h4 span{
+	border-bottom:3px solid #3e4e32;
+	opacity:0;
+}
+
+.ywig-loc-proj-overlay a{
+	opacity: 0;
+}
+
+.ywig-loc-proj-overlay p{
+	color:#fffeee;
+	opacity: 0;
+	font-size: 14px;
+}
+.ywig-location-project-col .img-contain:hover
+.ywig-loc-proj-overlay h4,
+.ywig-loc-proj-overlay h4 span{
+	opacity: 1;
+}
+.ywig-location-project-col .img-contain:hover
+.ywig-loc-proj-overlay p{
+	opacity: 1;
+	/*just in case*/
+	max-height: 150px;
+    overflow: auto;
+
+}
+
+.ywig-location-project-col .img-contain:hover
+.ywig-loc-proj-overlay a{
+	opacity: 1;
+}
+
+.img-contain{
+	width:100%;
+	position: relative;
+	margin-bottom: 50px;
+}
+
+
+/*
+LOCATION SECTION 
+*/
+.ywig-locations-intro{
+	margin-top:27px;
+	margin-bottom:54px;
+}
+
+.nav-pills>li {
+	border-bottom-left-radius:3px !important;
+	border-bottom-right-radius:3px !important;
+	border-top: 3px solid #cee0b9;
+	background: #e9dadd;
+	margin-left: 0.1em;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	transition: all 0.1s linear;	
+}
+
+
+
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
+	background: #fffeee;
+	 color: #3e4e32;
+	outline:0;
+
+}
+
+@media only screen and (min-width: 768px) {
+   .nav-pills>li.active{
+	border-top:3px solid rgba(96,155,52,1);
+	
+	}
+}
+@media only screen and (max-width: 768px) {
+	.ywig-pills-content{
+		margin-top: -100px !important;
+	}
+  .nav-pills>li{
+	background: #dae6ca;
+	
+	}
+ }
+
+ @media only screen and (max-width: 480px) {
+	.col-sm-12 h4, .col-xl-12 h4{
+		margin-top: 10px !important;
+	}
+}
+
+.nav-pills>li >a{
+	color:#3e4e32;
+}
+
+#ywig-locations-nav{
+	margin-top:32px;
+    margin-left: 0;
+
+}
+.nav-pills>li>a:hover{
+		
+		background: rgba(90,155,52,0.05);
+}
+
+.nav-pills>li.active{
+	border-bottom-left-radius:3px !important;
+	border-bottom-right-radius:3px !important;
+}
+
+nav .nav-pills:after{
+	position: absolute;
+    z-index: 1;
+    bottom: -9px;
+    left: 0;
+    width: 35%;
+    height: 2px;
+    margin: auto;
+    background: #ff0;
+    content: "";
+}
+
+.ywig-pills-content{
+	background: linear-gradient(#fffeee, #e3ebd6);
+	border-radius:2px !important;
+	margin-top:-50px;
+	padding-top:50px;
+	margin-bottom:37px;
+	box-shadow:0px -1px 1px #3e4e3269;
+}
+
+/*==================================
+TODO amalgamate a lot of slant effect
+==================================*/
+
+
+div.ywig-loc-slant{
+     width: 100%;
+    height: 0;
+    margin-top: 0px;
+    padding-left: 50%;
+    padding-top: 23%;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+
+}
+div.ywig-loc-slant:after{
+	content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: -444px;
+    margin-top: -444px;
+    border-left: 444px solid transparent;
+    border-right: 444px solid transparent;
+   	border-top: 444px solid #fffeef;
+    z-index: -1;
+}
+
+
+
+div.ywig-news-slant{
+     width: 100%;
+    height: 0;
+    margin-top: 0px;
+    padding-left: 50%;
+    padding-top: 23%;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+
+}
+div.ywig-news-slant:after{
+	content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: -444px;
+    margin-top: -444px;
+    border-left: 444px solid transparent;
+    border-right: 444px solid transparent;
+    border-top: 444px solid #f0ede1;
+    z-index: -1;
+}
+
+.carousel-inner .item{
+	z-index:0;
+}
+
+.img-contain img{
+	max-width: 200px;
+	border-radius:50% !important;
+}
+
+
+/*================================
+Events - (Our Team )
+================================*/
+
+.ywig-event-wrap:after {
+    content: "";
+    background-image: linear-gradient(#d188d64f,#d188d61f);;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+
+/*
+Event Triangle
+*/
+
+div.ywig-event-slant{
+     width: 100%;
+    height: 0;
+    margin-top: 0px;
+    padding-left: 50%;
+    padding-top: 23%;
+    overflow: hidden;
+    position: absolute;
+        /*z-index: -1;*/
+}
+
+div.ywig-event-slant:after{
+content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: -444px;
+    margin-top: -444px;
+    border-left: 444px solid transparent;
+    border-right: 444px solid transparent;
+        border-top: 444px solid #e3ecd7;
+}
+
+/*To make logo behind event triangle visible*/
+#ywig-make-relative{
+	position: relative;
+}
+
+.ywig-events-content{
+	    padding: 2%;
+    background: linear-gradient(#e3ecd7,#bdd2a500);
+   /* margin-top: 50px;*/
+       margin-top: 60px;
+    box-shadow: 0px -1px 1px #3e4e3226;
+}
+
+
+.our-team{
+	padding-top:0px;
+	background: rgba(169, 214, 136, 0.12);
+	position: relative;
+}
+
+.our-team .section-header h2{
+	border: 3px solid #efeedd;
+}
+
+/*======================================
+
+FOCUS SECTION - FUNDERS
+
+=======================================*/
+.focus{
+	background: #fffff1;
+	padding-top:20px !important;
+	padding-bottom:20px !important;
+
+}
+
+
+
+
+/*==============================================
+
+NEWS SECTION
+
+==============================================*/
+.latest-news{
+	/*background: rgba(239,238,221,0);*/
+	padding-top:0px;
+	position: relative;
+	background:none;
+}
+
+.ywig-news-wrap:after {
+    content: "";
+    /*background-image: url(http://138.68.182.248/wp-content/uploads/2018/05/ywig_front_mountain.png),linear-gradient(#609b3466, #3c763d24);*/
+    background-image: linear-gradient(#3c763d24, #609b3466);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+.ywig-news-column{
+	margin-top:60px;
+}
+
+.latest-news .section-header h2{
+	border:3px solid #609b34;
+	color:#3e4e32;
+	box-shadow: #3e4e324a 0px 8px 8px 2px;
+}
+
+#carousel-homepage-latestnews .item .latestnews-box .latestnews-title a:before {
+	background: #efeedd ! important;
+	height:3px;
+}
+
+.latesnews-content p, .latesnews-content {
+    color: #3e4e32;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+/*===================================
+
+FOOTER
+
+===================================*/
+/*remove list style*/
+.widget li:before {
+	content:none;
+}
+
+#footer {
+    background: #fffff1;
+    line-height: 14px;
+}
+
+.footer-widget-wrap {
+    background: #3e4e32;
+}
+
+.widget li {
+
+    text-align: center;
+    }
+
+.footer-widget-wrap .container{
+	padding:5%;
+}
+
+.footer-widget-wrap .widget li a {
+	color:#efeedd;
+}
+
+
+
+.copyright{
+	background:#fffff1;
+}
+
+.copyright p{
+		color:#3e4e32;
+}
+
+
+
+
+
+
+
+/*==========================================
+
+Override all red - #e96656 from parent css
+
+==========================================*/
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #853c89;
+}
+
+.navbar-inverse .navbar-nav ul.sub-menu li:hover > a,
+.navbar-inverse .navbar-nav ul.sub-menu li.link-focus > a {
+    color: #853c89;
+}
+
+a, a:visited{
+	color:#3e4e32;
+}
+a:hover, a:focus, a:active {
+  color: #853c89;
+}
+
+.navbar-inverse .navbar-nav > li.current > a {
+	position: relative;
+	outline: none;
+	color: #853c89;
+}
+
+ul.nav > li.current_page_item.current > a:before {
+	background: none;
+}
+
+.purchase-now {
+	background: #a9d688;
+}
+
+li.current > a:before {
+	background: none;
+}
+
+/*input:focus {
+	outline-color: green !important;
+}
+
+input[type="submit"] {
+	background-color: green;
+}
+
+a {
+	color: #3e4e32 !important;
+}
+a:visited {
+	color: #3e4e32 !important;
+}
+
+.nav-links a {
+	color: #3e4e32;
+}
+
+.widget .widget-title:before {
+	background:green;
+}
+
+.entry-title:before {
+	background: #3e4e32;
+}
+
+.comment-reply-link {
+	border-color: #3e4e32;
+	background: #3e4e32;
+}
+
+
+.navbar-inverse .navbar-nav ul.sub-menu li.link-focus > a {
+	color: #609b34;
+}
+
+.navbar-inverse .navbar-brand .site-title-tagline-wrapper .site-title > a:focus {
+	color: #609b34;
+}
+
+.navbar-inverse .navbar-nav > li > a.link-focus {
+	outline: none;
+	color: #609b34;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+	opacity: 1;
+	background-color: #3e4e32;
+	box-shadow: none;
+
+	filter: alpha(opacity=100);
+}
+.navbar-toggle.active {
+	background-color: #3e4e32 !important;
+}
+
+.navbar-inverse .navbar-nav > li > a:focus {
+	color: #609b34;
+}
+.navbar-inverse .navbar-nav > li.current > a {
+	position: relative;
+	outline: none;
+	color: #3e4e32;
+}
+
+li.current > a:before {
+	background: #3e4e32;
+}
+ul.nav > li.current > a:before,
+.page ul.nav > li.current-menu-item > a:before,
+.single-post ul.nav > li.current-menu-item > a:before,
+.archive ul.nav > li.current-menu-item > a:before {
+	background: #3e4e32;
+}
+
+ul.nav > li.current_page_item.current > a:before {
+	background: #3e4e32;
+}
+
+#carousel-homepage-latestnews .item .latestnews-box .latestnews-title a:before {
+	background: #3e4e32;
+}
+#carousel-homepage-latestnews .item .latestnews-box:nth-child(4n+1) .latestnews-title a:before {
+	background: #3e4e32;
+}
+
+.focus a.zerif-default-links:hover,
+.about-us a.zerif-default-links:hover,
+.our-team a.zerif-default-links:hover,
+.testimonial a.zerif-default-links:hover,
+.contact-us a.zerif-default-links:hover {
+	color: #3e4e32;
+}
+
+.team-member .social-icons ul li a:hover {
+	color: #609b34;
+}
+.our-team .row > span:nth-child(4n+1) .red-border-bottom:before {
+	background: #3e4e32;
+}
+
+
+
+.company-details a:hover {
+	color: green;
+}
+
+.social li a:hover {
+	color: #3e4e32;
+}
+
+article .posted-on a:hover {
+	color: green;
+}
+
+.entry-footer a:hover {
+	color: green;
+}
+
+.entry-title a:hover {
+	color: green;;
+}
+
+.entry-title:after {
+	background: green;
+}
+
+.entry-footer-large a:hover {
+	color: green;
+}
+
+.widget_calendar a {
+	color: green;
+}
+.widget_calendar a:hover {
+	background-color: green;
+}
+
+.widget_calendar thead th {
+	background: #e9e9e9;
+}
+
+.entry-content blockquote {
+	border-left: 3px solid green;
+}
+
+#bbpress-forums div.bbp-the-content-wrapper div.quicktags-toolbar input:hover {
+	color: green;
+}
+
+.bbp-body a.bbp-topic-permalink:hover {
+	color: green;
+}
+
+.bbp-body .bbp-topic-permalink:after {
+	background: green;
+}
+
+.bbp-topic-tags a:hover {
+	color: green;
+}
+
+#bbpress-forums div.bbp-topic-author a.bbp-author-name,
+#bbpress-forums div.bbp-reply-author a.bbp-author-name {
+	color: green;
+}
+
+.bbp-body > ul:nth-child(4n+3) .bbp-forum-title:after {
+	background: green;
+}
+
+.bbp-body > ul:nth-child(4n+3) .bbp-topic-permalink:after {
+	background: green;
+}
+
+span.bbp-admin-links a:hover {
+	color: green !important;
+}
+
+#favorite-toggle a:hover,
+#subscription-toggle a:hover {
+	color: green;
+}
+
+
+#bbpress-forums #bbp-user-wrapper h2.entry-title:before {
+	background: green;
+	content: "";
+}
+
+
+#bbpress-forums fieldset.bbp-form legend:before {
+	background: green;
+	content: "";
+}
+
+#bbpress-forums .is-favorite a {
+	color: green;
+}
+
+
+	.dropdownmenu {
+		background: url(images/menu-icon.png) center center no-repeat green;
+	}
+
+
+		.this-open > a {
+		color: green !important;
+	}
+
+*/
+
+
+
+
+
+
+
+
+
+
+/*end red was #e*/
+
+
+/*was red #fc6d6d */
+
+::selection {
+	background: darkgreen !important;
+}
+::-moz-selection {
+	background: darkgreen !important;
+}
+
+
+/*========================================
+
+Override all red - #fc6d6d from parent css
+
+======================================== */
+
+
+h2{
+	font-family: 'Lato', Helvetica, sans-serif !important;
+}
+
+
+
+
+
+
+
+
+.red-text {
+	color: green;
+}
+.green-text {
+	color: #34d293;
+}
+.blue-text {
+	color: #3ab0e2;
+}
+.yellow-text {
+	color: #f7d861;
+}
+.dark-text {
+	color: #3e4e32;
+}
+/*.white-text {
+	color: #efeedd !important;
+}*/
+
+
+
+/*====================================
+
+MEDIA QUERIES
+
+====================================*/
+
+
+/*
+mobile media queries
+*/
+
+@media (max-width: 767px) {
+/*
+hide donate button and top social icons when burger menu appears
+*/
+
+	#ywig-fixed-donate-btn{
+		display:none;
+	}
+
+	a.ywig-social-btn{
+		display:none !important;
+	}
+
+	.dropdownmenu{
+		background: url(images/menu-icon.png) center center no-repeat #609b34;
+	}
+
+	.this-open > a {
+    color: #3e4e32 !important;
+	}
+	
+	/*
+	remove extra dropdown icon on small screens
+	*/
+	#menu-menu-1 li a::after{
+		content:'' !important;
+	}
+
+	/*
+	fix empty drop down button on small screens
+	*/
+	p.dropdownmenu::after{
+		font-family: FontAwesome;
+		content: "\f0d7";
+		color: #efeedd !important;
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+
+
+	.navbar-inverse .navbar-nav > li{
+		border-bottom:1px solid #a9d688;
+	}
+
+	.ywig-header-colour{
+
+top: 0; 
+}
+
+  	/*=================================
+  	TODO Where to show Donate btn on mobile
+  	=================================*/
+/*	#ywig-fixed-donate-btn, #ywig-facebook-btn, #ywig-twitter-btn, #ywig-instagram-btn{
+		top:0;
+		font-size:22px;
+	}
+
+	.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+    margin-top: 30px;
+	}
+
+	.navbar-brand {
+	    height: 70px;
+	    padding: 7px 10px;
+	}
+	#ywig-fixed-donate-btn {
+	    margin: 9px 20px;
+	    padding: 5px 10px 5px 10px;
+	    text-transform: uppercase;
+	    font-size: 11px;
+	}
+	.ywig-events-content{
+    	margin-top: 50px;
+	}
+
+	.ywig-news-column{
+		margin-top: 50px;
+	}*/
+}/*End Media query <768px*/
+
+
+
+
+.project-hover hr {
+	height: 30px;
+	width: 0%;
+	border: 0;
+	-webkit-transition: all 0.5s ease 0.2s;
+	-moz-transition: all 0.5s ease 0.2s;
+	-o-transition: all 0.5s ease 0.2s;
+	transition: all 0.5s ease 0.2s;
+}
+
+.project:hover .project-hover a{
+	opacity:1;
+}
+
+.project:hover .project-hover,
+.project:focus .project-hover{
+	height:100%;
+	box-shadow: 2px 2px 2px #a7a7a7;
+	z-index: 0;
+	opacity: 1;
+	width:100%;
+}
+
+h2.ywig-thin{
+	font-weight:500;
+}
+
+
+.initial h2{
+	color:#efeedd;
+	line-height: 35px;
+	font-weight:400;
+}
+
+.ywig-logo-color{
+	opacity:0;
+	margin-top: 110px;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+.project:hover .ywig-logo-color{
+	opacity:1;
+	margin-top:10px;
+
+}
+.project:hover .initial h2 {
+	opacity: 0;
+	line-height: 0px;
+}
+
+.project:hover .project-hover hr {
+	width: 100%;
+	height: 5px;
+}
+.project-hover p{
+	opacity:0;
+	margin-top:-75px;
+	transition: opacity 1s linear 0.7s;
+	-webkit-transition: opacity 1s linear 0.7s;
+	-moz-transition: opacity 1s linear 0.7s;
+	-o-transition: opacity 1s linear 0.7s;
+}
+.project:hover .project-hover p{
+	opacity:1;
+	margin-top:0px;
+}
+
+.ywig-under{
+	border-bottom: 3px solid white;
+	color: #FFF;
+}
+
+.ywig-logo-white, .ywig-logo-color{
+	display:inline-block;
+}
+
+.ywig-logo-white{
+	/*border:2px solid #efeedd;*/
+	padding:10px;
+	margin-top:110px;
+}
+
+/*========================================
+Locations
+===========================================*/
+#ywig-locations-address-row{
+	margin-bottom:30px;
+	padding-left: 2em;
+}
+#ywig-locations-address-row h2{
+	text-transform: uppercase;
+}
+
+
+
+/*==================================================
+POST PAGES
+==================================================*/
+/*center and use default h1 fontsize
+*/
+.entry-title {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 30px;
+   /* text-align: center;*/
+}
+
+/*remove underline
+*/
+.entry-title:before, .entry-title:after {
+content:none;
+}
+.site-content{
+	background: #fffff1;
+}
+/* custom template template-fullwidth-top (for projects) */
+.ywig-projects-full-top-container{
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+/*========================================
+
+project Template
+
+========================================*/
+.ywig-project-temp{
+    padding: 4em 3em;
+}
+
+.ywig-project-temp-content{
+	margin-top:4em;
+}
+
+#ywig-project-temp-table>tbody>tr>td{
+	border:none;
+}
+
+.ywig-project-temp-content h4{
+	font-weight: 600;
+	font-size:16px;
+}
+}
+
+.ywig-project-temp-content p{
+	font-size:16px;
+}
+
+.display-4{
+
+    margin-top: 10px;
+    background: #fffff17a;
+    padding: 3%;
+    border-radius: 2px !important;
+
+}
+
+
+
+.ywig-project-banner{
+	background-repeat: no-repeat !important;
+    
+    height: 200px;
+    background-position: center center !important;
+}
+
+#main h2 strong{
+	font-size: 16px;
+	
+}
+
+#main h2,p{
+	text-align: left;
+}
+
+.ywig-projects-full-top-container .sidebar-wrap{
+	/*background:#f0a6b2;*/
+	border-radius:2px !important;
+	padding-bottom:15px;
+}
+
+.widget .widget-title:before {
+    background: #fffeee;
+    width: 100%;
+}
+
+
+/*center align logo in the footer*/
+.footer-widget-wrap .widget {
+    padding-bottom: 30px;
+    color: #fffeee;
+}
+.footer-widget-wrap .widget p {
+   text-align: center;
+}
+
+
+
+
+/*==================================================================
+Parent CSS BELOW HERE
+==================================================================*/
+
+
+
